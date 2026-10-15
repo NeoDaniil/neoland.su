@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стена памяти — NeoLand</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Шрифт Montserrat: предподключение + preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap">
 </head>
 <body>
 
 <nav class="navbar">
-    <div class="nav-logo"><span class="bolt"></span> NeoLand</div>
+    <div class="nav-logo"><span class="bolt" aria-hidden="true">⚡</span> NeoLand</div>
     <ul class="nav-links">
         <li><a href="index.html">Главная</a></li>
         <li><a href="team.html">Команда</a></li>
@@ -20,7 +29,8 @@
     <a href="https://discord.gg/neoland" class="nav-cta">Discord</a>
 </nav>
 
-<section class="section page-header">
+<main>
+<section class="page-header">
     <div class="container">
         <h1 class="page-title">Стена памяти и достижений</h1>
         <p class="page-subtitle">Люди и события, которые сформировали NeoLand</p>
@@ -35,7 +45,7 @@
 
             <!-- Пример карточки — замени на реальные данные -->
             <div class="wall-card">
-                <div class="wall-avatar" style="background: linear-gradient(135deg, #00d4ff, #7b2ff7);">
+                <div class="wall-avatar av-neon">
                     <span>ND</span>
                 </div>
                 <div class="wall-content">
@@ -46,7 +56,7 @@
             </div>
 
             <div class="wall-card">
-                <div class="wall-avatar" style="background: linear-gradient(135deg, #7b2ff7, #ff006e);">
+                <div class="wall-avatar av-pink">
                     <span>CG</span>
                 </div>
                 <div class="wall-content">
@@ -104,16 +114,17 @@
         </details>
     </div>
 </section>
+</main>
 
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-logo"><span class="bolt">⚡</span> NeoLand</div>
+            <div class="footer-logo"><span class="bolt" aria-hidden="true">⚡</span> NeoLand</div>
             <p>© 2024–2026 NeoLand Community.</p>
         </div>
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
