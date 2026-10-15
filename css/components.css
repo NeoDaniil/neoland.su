@@ -1,0 +1,478 @@
+/* ===== КНОПКИ ===== */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.5);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--neon-blue);
+    border: 2px solid var(--neon-blue);
+}
+
+.btn-outline:hover {
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.btn-small {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-small:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.3);
+}
+
+/* ===== О СООБЩЕСТВЕ ===== */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+    transition: all 0.3s;
+}
+
+.about-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--neon-blue);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.about-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--neon-blue);
+}
+
+.about-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ===== РЕСУРСЫ ===== */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.resource-card:hover {
+    border-color: var(--neon-blue);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.1);
+}
+
+.resource-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.resource-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.resource-card p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* ===== НАВИГАЦИОННЫЕ КАРТОЧКИ ===== */
+.nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.nav-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.nav-card:hover {
+    border-color: var(--neon-purple);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(123, 47, 247, 0.15);
+}
+
+.nav-card-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.nav-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--neon-blue);
+}
+
+.nav-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ===== КОМАНДА ===== */
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-card {
+    display: flex;
+    gap: 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 36px;
+    transition: all 0.3s;
+}
+
+.team-card:hover {
+    border-color: var(--neon-blue);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.1);
+}
+
+.team-card.founder {
+    border-color: rgba(0, 212, 255, 0.3);
+}
+
+.team-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+}
+
+.avatar-placeholder {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.founder-badge {
+    background: rgba(255, 215, 0, 0.15);
+    color: #ffd700;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.neon-badge {
+    background: rgba(0, 212, 255, 0.15);
+    color: var(--neon-blue);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.deputy-badge {
+    background: rgba(123, 47, 247, 0.15);
+    color: var(--neon-purple);
+    border: 1px solid rgba(123, 47, 247, 0.3);
+}
+
+.team-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.team-role {
+    color: var(--neon-blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.team-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.team-links {
+    margin-top: 16px;
+}
+
+.team-link {
+    color: var(--neon-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 1px dashed var(--neon-blue);
+}
+
+/* ===== СТЕНА ПАМЯТИ ===== */
+.wall-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wall-card {
+    display: flex;
+    gap: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s;
+}
+
+.wall-card:hover {
+    border-color: var(--neon-purple);
+    box-shadow: 0 8px 30px rgba(123, 47, 247, 0.1);
+}
+
+.wall-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.wall-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.wall-date {
+    color: var(--neon-blue);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.wall-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+/* ===== ИСТОРИЯ (TIMELINE) ===== */
+.history-details {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.history-summary {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    list-style: none;
+}
+
+.history-summary::-webkit-details-marker {
+    display: none;
+}
+
+.timeline {
+    margin-top: 24px;
+    padding-left: 24px;
+    border-left: 2px solid var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 28px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -31px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--neon-blue);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.timeline-date {
+    color: var(--neon-blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-content h4 {
+    font-size: 1.05rem;
+    margin: 4px 0;
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ===== СЕРВЕРА ===== */
+.servers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.server-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.server-card:hover {
+    border-color: var(--neon-blue);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.1);
+}
+
+.server-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.server-game-icon {
+    font-size: 4rem;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
+}
+
+.server-info {
+    padding: 24px;
+}
+
+.server-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.server-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.server-details {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.server-tag {
+    padding: 4px 12px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--neon-blue);
+    font-weight: 600;
+}
+
+/* Акцентные цвета иконок ресурсов */
+.resource-icon.discord   { color: #5865f2; }
+.resource-icon.telegram  { color: #29b6f2; }
+.resource-icon.web       { color: var(--neon-blue); }
+.resource-icon.personal  { color: var(--neon-purple); }
+/* ===== МОДИФИКАТОРЫ ЦВЕТОВ (бывшие инлайн-стили) ===== */
+/* Аватары: градиенты */
+.av-neon { background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple)); }
+.av-pink { background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink)); }
+
+/* Обложки игровых серверов */
+.bg-zomboid { background: linear-gradient(135deg, #1a1a2e, #16213e); }
+.bg-baro    { background: linear-gradient(135deg, #0f3460, #16213e); }
+.bg-valheim { background: linear-gradient(135deg, #2d1b69, #11998e); }

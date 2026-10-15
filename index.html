@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeoLand — Сообщество</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Шрифт Montserrat: предподключение + preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap">
 </head>
 <body>
 
 <nav class="navbar">
     <div class="nav-logo">
-        <span class="bolt">⚡</span> NeoLand
+        <span class="bolt" aria-hidden="true">⚡</span> NeoLand
     </div>
     <ul class="nav-links">
         <li><a href="index.html" class="active">Главная</a></li>
@@ -23,11 +32,12 @@
 </nav>
 
 <!-- HERO -->
+<main>
 <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
         <div class="hero-logo">
-            <span class="bolt-big"></span>
+            <span class="bolt-big" aria-hidden="true">⚡</span>
             <h1>NEO<span class="neon-text">LAND</span></h1>
         </div>
         <p class="hero-sub">Дружелюбное сообщество игроков с разными интересами</p>
@@ -49,17 +59,17 @@
         <h2 class="section-title">О сообществе</h2>
         <div class="about-grid">
             <div class="about-card">
-                <div class="card-icon">🌍</div>
+                <div class="card-icon" aria-hidden="true">🌍</div>
                 <h3>Открывать новое</h3>
                 <p>Место для людей, которым нравится открывать новое, делиться опытом и проводить время вместе.</p>
             </div>
             <div class="about-card">
-                <div class="card-icon">🤝</div>
+                <div class="card-icon" aria-hidden="true">🤝</div>
                 <h3>Объединять</h3>
                 <p>Цель сообщества — объединять участников с самыми разными интересами и создавать атмосферу, в которой каждому комфортно.</p>
             </div>
             <div class="about-card">
-                <div class="card-icon"></div>
+                <div class="card-icon" aria-hidden="true">🚀</div>
                 <h3>Развиваться</h3>
                 <p>NeoLand сформировался как место, где можно учиться, обсуждать, играть и просто общаться с людьми на одной волне.</p>
             </div>
@@ -73,22 +83,22 @@
         <h2 class="section-title">Наши ресурсы</h2>
         <div class="resources-grid">
             <a href="https://discord.gg/neoland" class="resource-card" target="_blank">
-                <div class="resource-icon discord">💬</div>
+                <div class="resource-icon discord" aria-hidden="true">💬</div>
                 <h3>Discord</h3>
                 <p>discord.gg/neoland</p>
             </a>
             <a href="#" class="resource-card" target="_blank">
-                <div class="resource-icon telegram">✈️</div>
+                <div class="resource-icon telegram" aria-hidden="true">✈️</div>
                 <h3>Telegram</h3>
                 <p>Группа сообщества NeoLand</p>
             </a>
             <a href="https://neoland.su" class="resource-card">
-                <div class="resource-icon web">🌐</div>
+                <div class="resource-icon web" aria-hidden="true">🌐</div>
                 <h3>Сайт</h3>
                 <p>neoland.su (в разработке)</p>
             </a>
             <a href="https://neodan.ru" class="resource-card" target="_blank">
-                <div class="resource-icon personal">👤</div>
+                <div class="resource-icon personal" aria-hidden="true">👤</div>
                 <h3>Личный сайт основателя</h3>
                 <p>neodan.ru (в разработке)</p>
             </a>
@@ -102,37 +112,38 @@
         <h2 class="section-title">Разделы сайта</h2>
         <div class="nav-cards">
             <a href="team.html" class="nav-card">
-                <span class="nav-card-icon">👥</span>
+                <span class="nav-card-icon" aria-hidden="true">👥</span>
                 <h3>Команда</h3>
                 <p>Люди, которые стоят за проектом</p>
             </a>
             <a href="wall.html" class="nav-card">
-                <span class="nav-card-icon">🏆</span>
+                <span class="nav-card-icon" aria-hidden="true">🏆</span>
                 <h3>Стена памяти</h3>
                 <p>Достижения и вклад участников</p>
             </a>
             <a href="servers.html" class="nav-card">
-                <span class="nav-card-icon"></span>
+                <span class="nav-card-icon" aria-hidden="true">🖥️</span>
                 <h3>Игровые сервера</h3>
                 <p>Project Zomboid, Barotrauma, Valheim и другие</p>
             </a>
         </div>
     </div>
 </section>
+</main>
 
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-logo"><span class="bolt">⚡</span> NeoLand</div>
+            <div class="footer-logo"><span class="bolt" aria-hidden="true">⚡</span> NeoLand</div>
             <p>© 2024–2026 NeoLand Community. Все права защищены.</p>
             <div class="footer-links">
-                <a href="https://discord.gg/neoland">Discord</a>
+                <a href="https://discord.gg/neoland" rel="noopener">Discord</a>
                 <a href="#">Telegram</a>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
